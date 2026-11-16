@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.header {
+    background-color: #1747C7;
+    display: flex;
+    grid-area: header;
+    margin: 0;
+    align-items: center;
+    font-family: 'Fraunces', sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    grid-area: main;
+    background-color: #1747C7;
+}
+.footer {
+    grid-area: footer;
+    background-color: #552906;
+    color: white;
+    text-align: center;
+}
+.texto {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+    margin: 20px;
+}
+.logo {
+    color: white;
+    font-size: 25px;
+    margin: 1cm;
+}
+.boton{
+    background-color: #1747C7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: right;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
