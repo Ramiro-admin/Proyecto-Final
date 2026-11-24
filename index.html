@@ -1,37 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final</title>
+    <title>Proyecto</title>
     <link rel="stylesheet" href="css/styles.css">
-    
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="logo">
-                <img src="assets/icons/Logo.png" alt="Logo de la empresa">
-                Comida de casa
-            </h1>
-            <nav>
-                <ul>
-                    <a class="texto">Menú</a>
-                    <a class="texto">Nosotros</a>
-                    <a class="texto">Galería</a>
-                    <a class="texto">Horarios</a>
-                    <a class="texto">Reservas</a>
-                    <a class="texto">Opiniones</a>
-                    <a class="texto">Contacto</a>
-                    <a class="texto">Inicio</a>
-                </ul>
+            <a class="logo" href="index.html">
+                <img src="assets/icons/Logo.png" width="42" height="42">
+                <span>Comida de Casa</span>
+            </a>
+            <input class="nav-check sr-only" type="checkbox" id="nav-check" aria-label="Abrir menú">
+            <label class="nav-toggle" for="nav-check">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </label>
+            <nav class="nav" id="nav" aria-label="Principal">
+                    <a class="texto home" href="index.html" aria-current="page">Inicio</a>
+                    <a class="texto" href="pages/Menu.html">Menú</a>
+                    <a class="texto" href="pages/Nosotros.html">Nosotros</a>
+                    <a class="texto" href="pages/Galeria.html">Galería</a>
+                    <a class="texto" href="pages/Horarios.html">Horarios</a>
+                    <a class="texto" href="pages/Reservas.html">Reservas</a>
+                    <a class="texto" href="pages/Opiniones.html">Opiniones</a>
+                    <a class="texto" href="pages/Contacto.html">Contacto</a>
             </nav>
-            <button class="boton">
-                <img src="assets/icons/Mi pedido.png" alt="Mi pedido">
-            </button>
+            <a class="boton" href="pages/Carrito.html" aria-label="Mi pedido">
+                <img src="assets/icons/Mi_pedido.png" alt="Mi pedido" width="146" height="49">
+                <span class="cart-count" aria-label="Platos en tu pedido">0</span>
+            </a>
         </header>
+
         <main class="main">
+            <section class="hero">
+                <div class="wrap">
+                    <h1>Comida de casa,<br>hecha con cariño.</h1>
+                    <p>Platos abundantes, ingredientes frescos y ese sabor familiar que siempre invita a volver a la mesa.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-yellow" href="pages/Menu.html">Explorar el menú</a>
+                        <a class="btn btn-white boton-reserva" href="pages/Reservas.html">Reservar una mesa</a>
+                    </div>
+                    <p class="hero-proof">
+                        <span class="stars" aria-hidden="true">★★★★★</span>
+                        <span>Hecho al momento · Con cariño y productos de la región</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="wrap">
+                    <div class="section-head">
+                        <div>
+                            <p class="eyebrow">Para cada antojo</p>
+                            <h2>¿Qué se te antoja hoy?</h2>
+                        </div>
+                        <p>De una entrada para compartir a un postre para cerrar con una sonrisa. Tenemos algo rico esperándote.</p>
+                    </div>
+                    <div class="grid-3">
+                        <article class="card antojo">
+                            <div class="chip-icon"><img src="assets/img/icono-entradas.png" alt="" onerror="this.remove()"></div>
+                            <h3>Entradas</h3>
+                            <p>Pequeños favoritos para abrir el apetito, preparados al momento.</p>
+                            <a class="btn btn-outline" href="pages/Menu.html#entradas">Ver opciones</a>
+                        </article>
+                        <article class="card antojo">
+                            <div class="chip-icon"><img src="assets/img/icono-platos.png" alt="" onerror="this.remove()"></div>
+                            <h3>Platos principales</h3>
+                            <p>Porciones generosas y recetas caseras con sabor a tradición.</p>
+                            <a class="btn btn-outline" href="pages/Menu.html#platos">Ver opciones</a>
+                        </article>
+                        <article class="card antojo">
+                            <div class="chip-icon"><img src="assets/img/icono-postres.png" alt="" onerror="this.remove()"></div>
+                            <h3>Postres y bebidas</h3>
+                            <p>Un final dulce o algo refrescante para acompañar tu comida.</p>
+                            <a class="btn btn-outline" href="pages/Menu.html#postres">Ver opciones</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt">
+                <div class="wrap essence">
+                    <div class="essence-text">
+                        <p class="eyebrow">Nuestra esencia</p>
+                        <h2>Sentirse en casa también se sirve en un plato.</h2>
+                        <p>Cocinamos con ingredientes frescos y recetas que celebran los sabores de nuestra región.</p>
+                    </div>
+                    <div class="share-card">
+                        <h3>Una mesa para compartir</h3>
+                        <p>Ven con amigos, en familia o date un gusto. Aquí siempre hay un lugar para ti.</p>
+                        <p class="highlight">100% Hecho al momento &#10084;&#65039; Cocina con cariño</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="assets/icons/Logo.png" alt="" width="38" height="38">
+                        <span>Comida de Casa</span>
+                    </a>
+                    <p class="footer-tagline">Sabores de siempre, preparados con cariño.</p>
+                </div>
+                <nav class="footer-links" aria-label="Pie de página">
+                    <a href="pages/Menu.html">Menú</a>
+                    <a href="pages/Nosotros.html">Nosotros</a>
+                    <a href="pages/Reservas.html">Reservas</a>
+                    <a href="pages/Opiniones.html">Opiniones</a>
+                    <a href="pages/Contacto.html">Contacto</a>
+                </nav>
+                <p class="footer-copy">&copy; Comida de Casa</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
-

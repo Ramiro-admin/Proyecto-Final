@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="../index.html">
+                <img src="../assets/icons/Logo.png" alt="" width="42" height="42">
+                <span>Comida de Casa</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <nav class="nav" id="nav" aria-label="Principal">
+                    <a class="texto home" href="../index.html">Inicio</a>
+                    <a class="texto" href="Menu.html">Menú</a>
+                    <a class="texto" href="Nosotros.html">Nosotros</a>
+                    <a class="texto" href="Galeria.html">Galería</a>
+                    <a class="texto" href="Horarios.html">Horarios</a>
+                    <a class="texto" href="Reservas.html">Reservas</a>
+                    <a class="texto" href="Opiniones.html">Opiniones</a>
+                    <a class="texto" href="Contacto.html" aria-current="page">Contacto</a>
+            </nav>
+            <a class="boton" href="Carrito.html" aria-label="Mi pedido">
+                <img src="../assets/icons/Mi_pedido.png" alt="Mi pedido" width="146" height="49">
+                <span class="cart-count" aria-label="Platos en tu pedido">0</span>
+            </a>
+        </header>
+
+        <main class="main">
+            <section class="page-head wrap">
+                <p class="eyebrow">Estamos para atenderte</p>
+                <h1>Contacto</h1>
+                <p>Escríbenos o visítanos, te atendemos con gusto.</p>
+            </section>
+
+            <section class="page-body wrap">
+                <div class="split">
+                    <div>
+                        <div class="info-list">
+                            <div class="card info"><small>Dirección de ejemplo</small><strong>Calle Principal 123</strong></div>
+                            <div class="card info"><small>Teléfono de ejemplo</small><strong>+591 700 00000</strong></div>
+                            <div class="card info"><small>Correo de ejemplo</small><strong>hola@comidadecasa.com</strong></div>
+                            <div class="card info"><small>Horario</small><strong>Lunes a domingo, consulta nuestros <a href="Horarios.html" style="text-decoration: underline;">horarios</a></strong></div>
+                        </div>
+                        <div class="map-card"><svg width="36" height="46" viewBox="0 0 24 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 28s9-8.2 9-15.5a9 9 0 0 0-18 0C3 19.8 12 28 12 28Z"/><circle cx="12" cy="12.5" r="3.2" fill="currentColor"/></svg><span>Ubicación por configurar</span></div>
+                    </div>
+
+                    <form class="card form-card" data-demo-form="Mensaje de demostración registrado. No se envió ningún dato.">
+                        <h2>Envíanos un mensaje</h2>
+                        <div class="form-grid">
+                            <div class="field full">
+                                <label for="c-nombre">Nombre</label>
+                                <input id="c-nombre" name="nombre" type="text" placeholder="Escribe tu nombre" autocomplete="name" required>
+                            </div>
+                            <div class="field full">
+                                <label for="c-correo">Correo</label>
+                                <input id="c-correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+                            </div>
+                            <div class="field full">
+                                <label for="c-mensaje">Mensaje</label>
+                                <textarea id="c-mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-blue btn-block" type="submit">Enviar mensaje</button>
+                        <p class="fine">Demostración de formulario: no se envían datos.</p>
+                        <p class="form-status" role="status"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../assets/icons/Logo.png" alt="" width="38" height="38">
+                        <span>Comida de Casa</span>
+                    </a>
+                    <p class="footer-tagline">Sabores de siempre, preparados con cariño.</p>
+                </div>
+                <nav class="footer-links" aria-label="Pie de página">
+                    <a href="Menu.html">Menú</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Reservas.html">Reservas</a>
+                    <a href="Opiniones.html">Opiniones</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+                <p class="footer-copy">&copy; Comida de Casa</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

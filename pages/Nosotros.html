@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="../index.html">
+                <img src="../assets/icons/Logo.png" alt="" width="42" height="42">
+                <span>Comida de Casa</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <nav class="nav" id="nav" aria-label="Principal">
+                    <a class="texto home" href="../index.html">Inicio</a>
+                    <a class="texto" href="Menu.html">Menú</a>
+                    <a class="texto" href="Nosotros.html" aria-current="page">Nosotros</a>
+                    <a class="texto" href="Galeria.html">Galería</a>
+                    <a class="texto" href="Horarios.html">Horarios</a>
+                    <a class="texto" href="Reservas.html">Reservas</a>
+                    <a class="texto" href="Opiniones.html">Opiniones</a>
+                    <a class="texto" href="Contacto.html">Contacto</a>
+            </nav>
+            <a class="boton" href="Carrito.html" aria-label="Mi pedido">
+                <img src="../assets/icons/Mi_pedido.png" alt="Mi pedido" width="146" height="49">
+                <span class="cart-count" aria-label="Platos en tu pedido">0</span>
+            </a>
+        </header>
+
+        <main class="main">
+            <section class="page-head wrap">
+                <p class="eyebrow">De nuestra cocina a tu mesa</p>
+                <h1>Nuestra historia</h1>
+                <p>Cocina casera, hecha con cariño y con productos de la región.</p>
+            </section>
+
+            <section class="page-body wrap">
+                <div class="story">
+                    <div class="media story-media">
+                        <img src="../assets/img/nosotros.jpg" alt="Nuestra cocina" loading="lazy" onerror="this.remove()">
+                    </div>
+                    <div class="story-text">
+                        <p class="eyebrow">Nuestra esencia</p>
+                        <h2>Cocinamos como en casa</h2>
+                        <p>Comida de Casa nació para que comer fuera se sienta como sentarse a la mesa de la familia: platos sencillos, porciones generosas y sabores de siempre.</p>
+                        <p>Cada día preparamos el menú con ingredientes frescos y recetas que pasan de generación en generación. Nos importa el sabor, pero también el momento que compartes alrededor de la mesa.</p>
+                    </div>
+                </div>
+
+                <div class="values-block">
+                    <p class="eyebrow">Lo que nos representa</p>
+                    <h2>Nuestros valores</h2>
+                    <div class="grid-3">
+                    <article class="card value">
+                        <div class="chip-icon"><img src="../assets/img/hecho_en_casa.jpg" alt=""></div>
+                        <h3>Hecho en casa</h3>
+                        <p>Todo se prepara al momento, con dedicación y sin perder el toque familiar.</p>
+                    </article>
+                    <article class="card value">
+                        <div class="chip-icon"><img src="../assets/img/productos_de_la_region.jpg" alt=""></div>
+                        <h3>Productos de la región</h3>
+                        <p>Elegimos ingredientes frescos y apoyamos a productores y mercados cercanos.</p>
+                    </article>
+                    <article class="card value">
+                        <div class="chip-icon"><img src="../assets/img/atencion_familiar.jpg" alt=""></div>
+                        <h3>Atención familiar</h3>
+                        <p>Te recibimos como a un invitado en casa, con una sonrisa y buena comida.</p>
+                    </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../assets/icons/Logo.png" alt="" width="38" height="38">
+                        <span>Comida de Casa</span>
+                    </a>
+                    <p class="footer-tagline">Sabores de siempre, preparados con cariño.</p>
+                </div>
+                <nav class="footer-links" aria-label="Pie de página">
+                    <a href="Menu.html">Menú</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Reservas.html">Reservas</a>
+                    <a href="Opiniones.html">Opiniones</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+                <p class="footer-copy">&copy; Comida de Casa</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

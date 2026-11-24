@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="../index.html">
+                <img src="../assets/icons/Logo.png" alt="" width="42" height="42">
+                <span>Comida de Casa</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <nav class="nav" id="nav" aria-label="Principal">
+                    <a class="texto home" href="../index.html">Inicio</a>
+                    <a class="texto" href="Menu.html">Menú</a>
+                    <a class="texto" href="Nosotros.html">Nosotros</a>
+                    <a class="texto" href="Galeria.html">Galería</a>
+                    <a class="texto" href="Horarios.html">Horarios</a>
+                    <a class="texto" href="Reservas.html" aria-current="page">Reservas</a>
+                    <a class="texto" href="Opiniones.html">Opiniones</a>
+                    <a class="texto" href="Contacto.html">Contacto</a>
+            </nav>
+            <a class="boton" href="Carrito.html" aria-label="Mi pedido">
+                <img src="../assets/icons/Mi_pedido.png" alt="Mi pedido" width="146" height="49">
+                <span class="cart-count" aria-label="Platos en tu pedido">0</span>
+            </a>
+        </header>
+
+        <main class="main">
+            <section class="page-head wrap">
+                <p class="eyebrow">Tu mesa te espera</p>
+                <h1>Reserva tu mesa</h1>
+                <p>Completa los datos y nos pondremos en contacto contigo para confirmar la reserva.</p>
+            </section>
+
+            <section class="page-body wrap">
+                <div class="split">
+                    <div>
+                        <h2 class="side-title">Un lugar en nuestra mesa</h2>
+                        <p class="side-text">Planifica una comida especial, una salida familiar o simplemente tu próximo almuerzo.</p>
+                        <div class="card note-card">
+                            <div class="chip-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 14.5V18a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></div>
+                            <h3>¿Son más de 8 personas?</h3>
+                            <p>Para grupos grandes, contáctanos y coordinaremos los detalles de tu visita.</p>
+                        </div>
+                    </div>
+
+                    <form class="card form-card" data-demo-form="Reserva de demostración registrada. No se envió ningún dato a un restaurante.">
+                        <h2>Detalles de la reserva</h2>
+                        <div class="form-grid">
+                            <div class="field full">
+                                <label for="r-nombre">Nombre</label>
+                                <input id="r-nombre" name="nombre" type="text" placeholder="Escribe tu nombre" autocomplete="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="r-fecha">Fecha</label>
+                                <input id="r-fecha" name="fecha" type="date" required>
+                            </div>
+                            <div class="field">
+                                <label for="r-hora">Hora</label>
+                                <input id="r-hora" name="hora" type="time" required>
+                            </div>
+                            <div class="field">
+                                <label for="r-personas">Personas</label>
+                                <select id="r-personas" name="personas">
+                                    <option value="1">1 persona</option>
+                                    <option value="2" selected>2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7">7 personas</option>
+                                    <option value="8">8 personas</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="r-tel">Teléfono</label>
+                                <input id="r-tel" name="telefono" type="tel" placeholder="Tu número de contacto" autocomplete="tel" required>
+                            </div>
+                        </div>
+                        <button class="btn btn-blue btn-block" type="submit">Enviar reserva</button>
+                        <p class="fine">Demostración de formulario: no se envían datos a un restaurante.</p>
+                        <p class="form-status" role="status"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../assets/icons/Logo.png" alt="" width="38" height="38">
+                        <span>Comida de Casa</span>
+                    </a>
+                    <p class="footer-tagline">Sabores de siempre, preparados con cariño.</p>
+                </div>
+                <nav class="footer-links" aria-label="Pie de página">
+                    <a href="Menu.html">Menú</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Reservas.html">Reservas</a>
+                    <a href="Opiniones.html">Opiniones</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+                <p class="footer-copy">&copy; Comida de Casa</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

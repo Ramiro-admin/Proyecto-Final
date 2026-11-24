@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="../index.html">
+                <img src="../assets/icons/Logo.png" alt="" width="42" height="42">
+                <span>Comida de Casa</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <nav class="nav" id="nav" aria-label="Principal">
+                    <a class="texto home" href="../index.html">Inicio</a>
+                    <a class="texto" href="Menu.html">Menú</a>
+                    <a class="texto" href="Nosotros.html">Nosotros</a>
+                    <a class="texto" href="Galeria.html">Galería</a>
+                    <a class="texto" href="Horarios.html" aria-current="page">Horarios</a>
+                    <a class="texto" href="Reservas.html">Reservas</a>
+                    <a class="texto" href="Opiniones.html">Opiniones</a>
+                    <a class="texto" href="Contacto.html">Contacto</a>
+            </nav>
+            <a class="boton" href="Carrito.html" aria-label="Mi pedido">
+                <img src="../assets/icons/Mi_pedido.png" alt="Mi pedido" width="146" height="49">
+                <span class="cart-count" aria-label="Platos en tu pedido">0</span>
+            </a>
+        </header>
+
+        <main class="main">
+            <section class="page-head wrap">
+                <p class="eyebrow">Te esperamos</p>
+                <h1>Cuándo visitarnos</h1>
+                <p>Abrimos todos los días para compartir contigo algo rico.</p>
+            </section>
+
+            <section class="page-body wrap">
+                <div class="grid-3">
+                    <article class="card schedule">
+                        <h3>Lunes a viernes</h3>
+                        <ul>
+                            <li>11:30 a 15:00</li>
+                            <li>18:30 a 22:00</li>
+                        </ul>
+                    </article>
+                    <article class="card schedule">
+                        <h3>Sábados</h3>
+                        <ul>
+                            <li>11:30 a 23:00</li>
+                        </ul>
+                    </article>
+                    <article class="card schedule">
+                        <h3>Domingos</h3>
+                        <ul>
+                            <li>12:00 a 17:00</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="banner schedule-cta">
+                    <div>
+                        <h2>¿Ya tienes hambre?</h2>
+                        <p>Elige algo rico del menú o reserva tu mesa para venir con calma.</p>
+                        <div class="banner-actions">
+                            <a class="btn btn-yellow" href="Menu.html">Ver el menú</a>
+                            <a class="btn btn-white" href="Reservas.html">Reservar mesa</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../assets/icons/Logo.png" alt="" width="38" height="38">
+                        <span>Comida de Casa</span>
+                    </a>
+                    <p class="footer-tagline">Sabores de siempre, preparados con cariño.</p>
+                </div>
+                <nav class="footer-links" aria-label="Pie de página">
+                    <a href="Menu.html">Menú</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Reservas.html">Reservas</a>
+                    <a href="Opiniones.html">Opiniones</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+                <p class="footer-copy">&copy; Comida de Casa</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>
